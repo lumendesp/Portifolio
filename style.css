@@ -9,7 +9,6 @@ body{
 
 .header-container {
     height: 100vh;
-    width: 100vw;
     background-color:lightpink;
     background-image: url('./fotos/background.png');
     background-repeat: no-repeat;
@@ -43,6 +42,10 @@ h3 {
 .Social-media {
     margin-top: 1rem;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
 }
 
 .Social-media a {
@@ -50,14 +53,19 @@ h3 {
     color: rgb(95, 6, 47);
     padding: 1rem 4rem;
     border: 1px dashed rgb(226, 114, 157);
-    min-width: 4rem;
+    border-radius: 8px;
+    width: 70px;
+    text-align: center;
     align-items: center;
     justify-content: center;
-    transition: .5s ease-in-out;
+    transition: background .5s ease-in-out, color .5s ease-in-out, font-size .5s ease-in-out;
 }
 
 a:hover {
-    background-color:lightgrey;
+    background-color:rgb(226, 114, 157);
+    color: white;
+    font-size: 18px;
+
 }
 
 .checkbox-container {
@@ -138,6 +146,10 @@ a:hover {
 
 .menu-items ul {
     list-style-type: none;
+
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
 }
 
 .menu-items ul li a {
@@ -147,6 +159,7 @@ a:hover {
     text-transform: uppercase;
     letter-spacing: 4px;
     font-size: 40px;
+    width: 110%;
 }
 
 #toggle:checked + .checkbox .trace:nth-child(1) {
@@ -345,4 +358,26 @@ a:hover {
     font-size: 22px;
     letter-spacing: 1px;
     margin: 0rem 15rem 3rem 15rem;
+}
+
+@media (max-width: 1200px){
+    .Social-media {
+        max-width: 410px;
+    }
+}
+
+@media (max-width: 992px){
+    .header-container h2 {
+        max-width: 380px;
+    }
+}
+
+@media (max-width: 768px){
+    .Social-media {
+        max-width: 282px;
+    }
+    .Social-media a {
+        max-width: 130px;
+        padding: 1rem 2rem;
+    }
 }
