@@ -177,7 +177,7 @@ a:hover {
 
 #toggle:checked + .checkbox .trace:nth-child(3) {
     transform: rotate(-45deg);
-    top: 48px; 
+    top: 48px;
 }
 
 #toggle:checked +.checkbox {
@@ -219,7 +219,7 @@ a:hover {
     align-items: center;
     justify-content: center;
     background-color: lightpink;
-    background-image: url('./fotos/castelo.png');
+    background-image: url('./fotos/castelo\ redondo.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -238,7 +238,7 @@ a:hover {
     align-items: center;
     justify-content: center;
     background-color: lightpink;
-    background-image: url('./fotos/olivia\ rodrigo.png');
+    background-image: url('./fotos/olivia\ redonda.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
